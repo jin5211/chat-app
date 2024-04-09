@@ -35,17 +35,44 @@
 }
 
 .side-bar-menu{
-  width: 100;
+  width: 100%;
   height: 100px;
   background-color: #253141;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.chat-rooms-name{
+.sbm-name a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+.sbm-make_new a{
+  text-decoration: none;
+  font-size: 10px;
+  color: deepskyblue;
+  padding: 14px;
+  border: 1px solid lightblue;
+}
+
+.chat-rooms{
   width: 100;
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.chat-room{
+  padding: 20px 0 40px;
+}
+
+.chat-room-name a{
+  color: white;
+  text-decoration: none;
 }
 
 /* main-chat */
