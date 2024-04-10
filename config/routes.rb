@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'messages/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
-
+  resources :users, only: [:edit, :update]
   root to: "messages#index"
+  get 'messages/index'
 end
