@@ -1,0 +1,10 @@
+<div class="msg_block">
+  <div class="user_name_and_time">
+    <!-- 投稿したユーザー名情報を出力する -->
+    <%= message.user.name %>
+    <!-- 投稿した時刻を出力する -->
+    <%= message.created_at %>
+  </div>
+  <!-- 投稿したメッセージ内容を記述する -->
+  <%= message.content %>
+</div>
